@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Định hướng nghề nghiệp</title>
+  <style>
+    header h1{
+    font-size: 60px;   /* tăng kích thước chữ */
+    font-weight: bold;
+    color: darkblue;
+    margin: 0;
+}
+    
+    body{
+       margin:0;
+      font-family:Arial, sans-serif;
+  background:linear-gradient(to right,#49b9ff,#e894ff);
+    }
+    header{
+      text-align: center;
+    
+    background-color: #edcdf6;
+    padding: 10px ;
+    }
+
+.logo-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.logo{
+    width: 250px;   /* chỉnh to nhỏ logo ở đây */
+    height: 250px;
+
+}
+
+
+    nav {
+  background:white;
+  text-align:center;
+  padding:12px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.1);
+}
+    nav a{
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+  color:#333;
+}
+    nav a:hover{
+  color:#2f80ed;
+}
+    .container{
+  width:85%;
+  margin:auto;
+  padding:30px 0;
+}
+       .cards{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+ justify-content:space-between;
+ 
+}
+       .card{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  width:23%;
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+       .card:hover{
+  transform:translateY(-5px);
+}      
+       .quiz{
+  background:white;
+  padding:25px;
+  
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+       button{
+  background:#2f80ed;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  
+
+  
+}
+       button:hover{
+  background:#1c5db6;
+}
+        .result{
+  margin-top:20px;
+  font-weight:bold;
+  font-size:18px;
+  color:#d81b60;
+}
+    footer{
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+.about-box{
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
+
+.about-text{
+  flex:1;
+}
+
+.about-img img{
+  width:400px;
+  border-radius:15px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+ 
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+        <img src="logo.png"alt="Logo website" class="logo" >
+        <h1>ĐỊNH HƯỚNG NGHỀ NGHIỆP</h1>
+        <br>
+        
+    </div>
+    <p>Khám phá ngành học phù hợp với sở thích – năng lực – mục tiêu tương lai </p>
+    </header>
+    
+  
+
+  <nav>
+    <div class="nav-inner">
+      <a href="#gioithieu">Giới thiệu</a>
+      <a href="#nganh">Các ngành phổ biến</a>
+      <a href="#goiy">Gợi ý các ngành theo khối</a>
+      <a href="#tracnghiem">Trắc nghiệm nhanh</a>
+      <a href="#lienhe">Lời khuyên</a>
+    </div>
+  </nav>
+
+  
+
+   <div class="container">
+  <section id="gioithieu" class="about">
+    
+    <div class="about-box">
+      
+      <div class="about-text">
+        <h2>Vì sao cần định hướng nghề nghiệp sớm?</h2>
+        <p>Chọn ngành không chỉ dựa vào điểm số. Một lựa chọn phù hợp cần dựa trên 3 yếu tố:</p>
+        <ul>
+          <li><b>Sở thích:</b> bạn có thực sự thích làm công việc đó mỗi ngày?</li>
+          <li><b>Năng lực:</b> bạn học tốt môn nào nhất?</li>
+          <li><b>Nhu cầu xã hội:</b> ngành đó có cơ hội việc làm không?</li>
+        </ul>
+        <p>Khi 3 yếu tố này giao nhau → đó là ngành phù hợp.</p>
+      </div>
+
+      <div class="about-img">
+        <img src="nghe.png" alt="Định hướng nghề nghiệp">
+      </div>
+
+    </div>
+
+  </section>
+
+            <section id="nganh">
+      <h2>Gợi ý các nhóm ngành theo khối</h2>
+      <div class="cards">
+        <div class="card">
+          <span class="tag">Công nghệ</span>
+          <h3>Công nghệ thông tin</h3>
+          <p>Lập trình, AI, an ninh mạng, thiết kế web. Nhu cầu nhân lực cao, thu nhập tốt.</p>
+          <p><b>Phù hợp:</b> học tốt Toán, tư duy logic.</p>
+        </div>
+
+        <div class="card">
+          <span class="tag">Kinh tế</span>
+          <h3>Logistics & Xuất nhập khẩu</h3>
+          <p>Quản lý vận chuyển hàng hóa quốc tế, làm việc với cảng biển, doanh nghiệp.</p>
+          <p><b>Phù hợp:</b> thích kinh doanh, tiếng Anh khá.</p>
+        </div>
+
+        <div class="card">
+          <span class="tag">Dịch vụ</span>
+          <h3>Du lịch – Khách sạn</h3>
+          <p>Hướng dẫn viên, quản trị khách sạn, sự kiện. Cơ hội lớn tại thành phố du lịch.</p>
+          <p><b>Phù hợp:</b> giao tiếp tốt, năng động.</p>
+        </div>
+
+        <div class="card">
+          <span class="tag">Ngôn ngữ</span>
+          <h3>Ngôn ngữ Anh</h3>
+          <p>Biên – phiên dịch, giảng dạy, làm việc công ty nước ngoài.</p>
+          <p><b>Phù hợp:</b> thích học ngoại ngữ, giao tiếp.</p>
+        </div>
+      </div>
+    </section>
+            <section id="goiy">
+      <h2>Các nhóm ngành tiêu biểu</h2>
+      <div class="cards">
+        <div class="card">
+          <span class="tag">Khối A1</span>
+          <h4>(Toán-Lý-Anh)</h4>
+          <p>Kinh doanh quốc tế </p>
+          <p>Quản trị kinh doanh </p>
+          <p>Công nghệ thông tin </p>
+          <p>Khoa học máy tính</p>
+          <p>Kỹ thuật phần mềm</p>
+          <p><b>Phù hợp:</b> kinh doanh, tài chính, ngoại giao và thị trường quốc tế</p>
+        </div>
+
+        <div class="card">
+          <span class="tag">Khối A</span>
+          <h4>(Toán-Lý-Hóa)</h4>
+          <p>Nhóm ngành công nghệ thông tin</p>
+          <p>Nhóm ngành công an, quân đội</p>
+          <p>Kỹ thuật cơ khí </p>
+          <p>Kế toán-kiểm toán</p>
+          <p>Xây dựng</p>
+          <p><b>Phù hợp:</b> kỹ thuật, lập luận và nghiên cứu công nghệ </p>
+        </div>
+
+        <div class="card">
+          <span class="tag">Khối B</span>
+          <h4>(Toán-Hóa-Sinh)</h4>
+          <p>Y khoa </p>
+          <p>Dược học </p>
+          <p>Thú y </p>
+          <p>Điều dưỡng</p>
+          <p>Công nghệ sinh học</p>
+          <p><b>Phù hợp:</b> y học,hóa học, công nghệ sinh học và chăm sóc sức khỏe con người </p>
+        </div>
+
+        <div class="card">
+          <span class="tag">Khối C</span>
+          <h4>(Văn-Sử-Địa)</h4>
+          <p>Luật</p>
+          <p>Báo chí</p>
+          <p>Truyền thông</p>
+          <p>Du lịch lữ hành</p>
+          <p>Quản lí nhà nước</p>
+          <p><b>Phù hợp:</b> các hoạt động giao tiếp, văn hóa và con người</p>
+        </div>
+
+        <div class="card">
+          <span class="tag"></span>
+          <img src="anh.PNG" alt="career" />
+        </div>
+
+        <div class="card">
+          <span class="tag">Khối D</span>
+          <h4>(Toán-Văn-anh)</h4>
+          <p>Ngôn ngữ</p>
+          <p>Quản trị Khách sạn</p>
+          <p>Logistics và Quản lí chuỗi cung ứng </p>
+          <p>Quan hệ quốc tế</p>
+          <p>Truyền thông đa phương tiện</p>
+          <p><b>Phù hợp:</b> sáng tạo, quản trị và giao tiếp </p>
+        </div>
+        
+      </div>
+    </section>
+    <section id="tracnghiem">
+      <h2>Trắc nghiệm định hướng nhanh</h2>
+      <div class="quiz">
+        <h3>Thông tin học sinh</h3>
+
+<label>Họ và tên:</label><br>
+<input type="text" placeholder="Nhập họ tên của bạn"><br><br>
+
+<label>Lớp:</label><br>
+<input type="text" placeholder="Ví dụ: 12A3"><br><br>
+
+<hr><br>
+        <div class="q">
+          <p>1. Môn bạn học dễ nhất?</p>
+          <label><input type="radio" name="q1" value="it"> Toán - Lý</label><br>
+          <label><input type="radio" name="q1" value="business"> Anh - Văn</label><br>
+          <label><input type="radio" name="q1" value="social"> Địa - Sử</label>
+        </div>
+
+        <div class="q">
+          <p>2. Bạn thích làm việc kiểu nào?</p>
+          <label><input type="radio" name="q2" value="it"> Làm máy tính, phân tích</label><br>
+          <label><input type="radio" name="q2" value="business"> Giao tiếp, thuyết phục</label><br>
+          <label><input type="radio" name="q2" value="social"> Hướng dẫn, giúp đỡ người khác</label>
+        </div>
+
+        <div class="q">
+          <p>3. Hoạt động bạn thấy thú vị hơn?</p>
+          <label><input type="radio" name="q3" value="it"> Giải bài logic / lập trình</label><br>
+          <label><input type="radio" name="q3" value="business"> Bán hàng / marketing online</label><br>
+          <label><input type="radio" name="q3" value="social"> Tổ chức sự kiện / CLB</label>
+        </div>
+
+        <div class="q">
+          <p>4. Môi trường làm việc bạn thích?</p>
+          <label><input type="radio" name="q4" value="it"> Ngồi máy tính, làm việc tập trung</label><br>
+          <label><input type="radio" name="q4" value="business"> Họp nhóm, trao đổi dự án</label><br>
+          <label><input type="radio" name="q4" value="social"> Gặp gỡ khách hàng / du khách</label>
+        </div>
+
+        <div class="q">
+          <p>5. Bạn muốn dùng tiếng Anh vào việc gì?</p>
+          <label><input type="radio" name="q5" value="it"> Đọc tài liệu công nghệ</label><br>
+          <label><input type="radio" name="q5" value="business"> Thuyết trình, đàm phán</label><br>
+          <label><input type="radio" name="q5" value="social"> Hướng dẫn, giảng dạy</label>
+        </div>
+
+        <div class="q">
+          <p>6. Cuối tuần lý tưởng của bạn?</p>
+          <label><input type="radio" name="q6" value="it"> Làm website / app nhỏ</label><br>
+          <label><input type="radio" name="q6" value="business"> Mở shop online thử kinh doanh</label><br>
+          <label><input type="radio" name="q6" value="social"> Tham gia hoạt động tình nguyện</label>
+        </div>
+          <div class="q">
+  <p>7. Bạn làm tốt nhất khi?</p>
+  <label><input type="radio" name="q7" value="it"> Làm việc một mình, tập trung</label><br>
+  <label><input type="radio" name="q7" value="business"> Làm việc theo mục tiêu, có cạnh tranh</label><br>
+  <label><input type="radio" name="q7" value="social"> Làm việc cùng người khác, hỗ trợ nhau</label>
+</div>
+
+           <div class="q">
+  <p>8. Khi học bài, bạn thích kiểu nào?</p>
+  <label><input type="radio" name="q8" value="it"> Hiểu bản chất, nguyên lý</label><br>
+  <label><input type="radio" name="q8" value="business"> Áp dụng vào thực tế, kiếm lợi ích</label><br>
+  <label><input type="radio" name="q8" value="social"> Thảo luận, giải thích cho người khác</label>
+</div>
+            <div class="q">
+  <p>9. Điều khiến bạn thấy mình "có giá trị"?</p>
+  <label><input type="radio" name="q9" value="it"> Giải quyết được vấn đề khó</label><br>
+  <label><input type="radio" name="q9" value="business"> Đạt thành tích, được công nhận</label><br>
+  <label><input type="radio" name="q9" value="social"> Giúp người khác tiến bộ</label>
+</div>
+            <div class="q">
+  <p>10. Bạn thường bị thu hút bởi?</p>
+  <label><input type="radio" name="q10" value="it"> Máy móc, công nghệ, hệ thống</label><br>
+  <label><input type="radio" name="q10" value="business"> Dự án, kế hoạch, cơ hội</label><br>
+  <label><input type="radio" name="q10" value="social"> Con người, tâm lý, giao tiếp</label>
+</div>
+             
+            <div class="q">
+  <p>11. Nếu được chọn vai trò trong một CLB?</p>
+  <label><input type="radio" name="q11" value="it"> Người thiết kế, làm kỹ thuật</label><br>
+  <label><input type="radio" name="q11" value="business"> Người tổ chức, quản lý</label><br>
+  <label><input type="radio" name="q11" value="social"> Người hướng dẫn, đào tạo</label>
+</div>
+             <div class="q">
+  <p>12. Bạn muốn công việc tương lai mang lại điều gì nhất?</p>
+  <label><input type="radio" name="q12" value="it"> Sản phẩm, giải pháp cụ thể</label><br>
+  <label><input type="radio" name="q12" value="business"> Thu nhập và cơ hội phát triển</label><br>
+  <label><input type="radio" name="q12" value="social"> Ý nghĩa và đóng góp xã hội</label>
+</div>
+        <button onclick="calc()">Xem kết quả</button>
+        <div class="result" id="result"></div>
+        <div id="suggestions" style="margin-top:12px"></div>
+      </div>
+    </section>
+
+    <section id="lienhe">
+      <h2>Lời khuyên khi chọn ngành</h2>
+      <ul>
+        <li>Không chọn chỉ vì bạn bè chọn</li>
+        <li>Không chọn chỉ vì “ngành hot”</li>
+        <li>Hãy xem chương trình học trước khi đăng ký</li>
+        <li>Thử học online cơ bản trước để kiểm tra phù hợp</li>
+      </ul>
+    </section>
+  </div> 
+
+  <footer>
+    © 2026 - Dự án Tin học 12 - nhóm 1 lớp 12/3  | Website định hướng nghề nghiệp học sinh THPT
+  </footer>
+
+  <script>
+function calc(){
+  const score={it:0,business:0,social:0};
+  const questions=['q1','q2','q3','q4','q5','q6','q7','q8','q9','q10','q11','q12'];
+  for(const q of questions){
+    const ans=document.querySelector('input[name="'+q+'"]:checked');
+    if(!ans){
+      document.getElementById('result').innerText='Hãy chọn hết các câu!';
+      document.getElementById('suggestions').innerHTML='';
+      return;
+    }
+    score[ans.value]++;
+  }
+
+  const total=questions.length;
+  const pct={
+    it: Math.round(score.it/total*100),
+    business: Math.round(score.business/total*100),
+    social: Math.round(score.social/total*100)
+  };
+
+  let max='it';
+  if(score.business>score[max]) max='business';
+  if(score.social>score[max]) max='social';
+
+  let text='';
+  let suggestHTML='';
+
+  if(max==='it'){
+    text='Khuynh hướng: Công nghệ thông tin ('+pct.it+'%).';
+    suggestHTML=`<b>Ngành nên cân nhắc:</b><ul>
+      <li>Công nghệ thông tin / Khoa học máy tính</li>
+      <li>An ninh mạng</li>
+      <li>Kỹ thuật phần mềm</li>
+      <li>Trí tuệ nhân tạo (AI)</li>
+    </ul>
+    <b>Trường gợi ý:</b><ul>
+      <li>ĐH CNTT & Truyền thông Việt–Hàn (VKU) – ĐH Đà Nẵng</li>
+      <li>ĐH Bách khoa – ĐH Đà Nẵng (DUT)</li>
+      <li>ĐH FPT Đà Nẵng</li>
+      <li>ĐH Duy Tân</li>
+    </ul>`;
+  }
+  else if(max==='business'){
+    text='Khuynh hướng: Kinh tế – Ngôn ngữ ('+pct.business+'%).';
+    suggestHTML=`<b>Ngành nên cân nhắc:</b><ul>
+      <li>Logistics & Quản lý chuỗi cung ứng</li>
+      <li>Marketing</li>
+      <li>Quản trị kinh doanh</li>
+      <li>Thương mại điện tử</li>
+    </ul>
+    <b>Trường gợi ý:</b><ul>
+      <li>ĐH Kinh tế – ĐH Đà Nẵng (DUE)</li>
+      <li>ĐH Duy Tân</li>
+      <li>ĐH Đông Á</li>
+      <li>ĐH FPT Đà Nẵng</li>
+    </ul>`;
+  }
+  else{
+    text='Khuynh hướng: Xã hội – Dịch vụ ('+pct.social+'%).';
+    suggestHTML=`<b>Ngành nên cân nhắc:</b><ul>
+      <li>Ngôn ngữ Anh</li>
+      <li>Du lịch – Quản trị khách sạn</li>
+      <li>Sư phạm</li>
+      <li>Quan hệ quốc tế</li>
+    </ul>
+    <b>Trường gợi ý:</b><ul>
+      <li>ĐH Ngoại ngữ – ĐH Đà Nẵng (UFLS)</li>
+      <li>ĐH Sư phạm – ĐH Đà Nẵng</li>
+      <li>ĐH Duy Tân</li>
+    </ul>`;
+  }
+
+  document.getElementById('result').innerText=text+'  |  IT: '+pct.it+'% • Kinh tế: '+pct.business+'% • Xã hội: '+pct.social+'%';
+  document.getElementById('suggestions').innerHTML=suggestHTML;
+}
+</script>
+</body>
+</html>
